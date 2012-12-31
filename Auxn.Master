@@ -1,0 +1,235 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Auxn.master.cs" Inherits="LebanonAuxn.Auxn" MasterPageFile="" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+  <link rel="stylesheet" href="bootstrap/bootstrap.css" />
+  
+  <link rel="stylesheet" href="bootstrap/bootstrap-responsive.css" />
+ 
+
+   <style type="text/css">
+        .Panel3Btn
+        {
+            background-color: #0080ff;
+            color: White;
+            text-align: left;
+            font-size: medium;
+            font-weight: bold;
+            border: 1px;
+            width: 178px;
+            height: 52px;
+        }
+        
+        
+        
+        </style>
+    
+    <script src="Scripts/jquery.js" type="text/javascript"></script>
+    <script src="Scripts/jquery.js" type="text/javascript"></script>
+    <script src="bootstrap/bootstrap.js" type="text/javascript"></script>
+    
+    <script type="text/javascript">
+        var previousColor;
+        function MenuOver() {
+            previousColor = window.event.srcElement.style.color;
+            
+            window.event.srcElement.style.backgroundColor = "#99CCFF";
+            window.event.srcElement.style.color = "#000000";
+        }
+        function MenuOut() {
+            window.event.srcElement.style.backgroundColor = "#003399";
+            window.event.srcElement.style.color = "#ffffff";
+        }
+        function ToggleVisibility(controlId) {
+            
+                document.getElementById(controlID).style.visibility = "visible";
+                
+            
+
+        }
+        function ShowSignIn() {
+            ToggleVisibility("username");
+            ToggleVisibility("password");
+            alert("test");
+        }
+
+
+    </script>
+    <title></title>
+    <style type="text/css">
+        .Panel3Btn
+        {
+            background-color: #0080ff;
+            color: White;
+            text-align: left;
+            font-size: medium;
+            font-weight: bold;
+            border: 1px;
+            width: 178px;
+            height: 52px;
+        }
+          
+        
+        .style1
+        {
+            text-align: center;
+            color: #DB4F49;
+            font-size: 10px;
+        }
+          
+        
+        .style2
+        {
+            width: 93%;
+        }
+        .style5
+        {
+            width: 36%;
+        }
+          
+        
+        </style>
+</head>
+<body 
+background="bkgnd_swirl.png"
+    style = "background-repeat:repeat; background-position:top left; ">
+    <form id="form1" runat="server" Width="100%">
+    <div id="topcontent">
+      <asp:Panel ID="panel_topcontent" runat="server" Height="128px" Width="100%" BackImageUrl="~/bkgnd_shattered.png" >
+                
+                <br /><br />
+                <table width="100%">
+                
+                <tr>
+                <td rowspan="3" class="style2"> <a href="Home.aspx" style="text-decoration:none;"> <h1 style="font-size:40pt; color:White;"> &nbsp LEBANON AUXN</h1> </a></td>
+                <td class="style5" >
+                    <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Overline="False" 
+                        Font-Underline="False" ForeColor="#333333" Text="Sign in"></asp:Label>
+                    </td>
+                <td class="add-on" >
+                    <asp:button ID="signInButton" runat="server"  class = "btn btn-link"
+                    Text="Sign up" Width="100%" /></td>
+                </tr>
+
+                <tr>
+                    <td class="style5">
+                    <asp:TextBox ID="TextBox_username" width="80%"  runat="server" Height="10px" 
+                            ToolTip="Username" AutoCompleteType="FirstName" Font-Bold="True"></asp:TextBox>
+                    </td>
+                    <td class="add-on" width="50%">
+                        <asp:TextBox ID="TextBox_password" TextMode="Password" runat="server" Height="10px" width="80%" 
+                            ToolTip="Password" AutoCompleteType="Disabled" AutoPostBack="false" 
+                            Font-Bold="True"></asp:TextBox>
+                    </td>
+                </tr>
+
+                </table>              
+                
+                <asp:Panel ID="panel_menu" runat="server" Height="28px" Width="100%" BackColor="#db4f49" >
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  
+                      <asp:Button ID="myprofileBtn" 
+                        runat="server" class="btn btn-danger" 
+                         Text="My Profile" Width="120px" onclick="Button5_Click" 
+                        Font-Bold="True" BorderStyle="Solid" />
+                       <!--  <input type="text" class="search-query pull-right " placeholder="Search" 
+                        runat="server"  >  -->
+                         <asp:Button ID="viewItemsBtn" runat="server" class="btn btn-danger" Text="Browse Items" 
+                        Width="120px" onclick="Button2_Click" Font-Bold="True" 
+                        BorderStyle="Solid" />
+
+                    <asp:Button ID="searchBtn" runat="server" class="btn btn-danger" 
+                         Text="Search" Width="120px" onclick="Button3_Click" Font-Bold="True" 
+                        BorderStyle="Solid" />
+                   
+                    <asp:Button ID="sellBtn" 
+                        runat="server" class="btn btn-danger" Text="Sell" 
+                        Width="120px" onclick="Button4_Click" Font-Bold="True" 
+                        BorderStyle="Solid" />
+                
+                          <asp:Button ID="aboutBtn" runat="server" class ="btn btn-danger" Text="About" 
+                    Width="120px" onclick="Button1_Click" Font-Bold="True" BorderStyle="Solid"  />
+                   
+                </asp:Panel>
+                </asp:Panel>
+                </div>
+                
+                <br />
+
+                 <asp:Panel ID="panel_maincontent" runat="server" Width="100%" Height="1000">
+                <table width="100%">
+                <tr width="100%">
+                <!-- main left content -->
+                <td width="2%"> </td>
+                <td width="78%" rowspan="4"> 
+                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+               
+                </asp:ContentPlaceHolder>
+                </td>
+                <!-- main right content -->
+                <td width="20%"> 
+
+<!-- vertical divider 
+<ul class="nav">
+ 
+  <li class="divider-vertical"></li> <li class="divider-vertical"></li> <li class="divider-vertical"></li> <li class="divider-vertical"></li>
+ 
+</ul>
+-->
+
+
+
+    <ul class="nav nav-tabs nav-stacked"">
+    <!-- <li class="disabled"><a >Categories</a></li>  -->
+    
+    <li class="dropdown-submenu" dir="rtl">
+    <a tabindex="-1" href="#">Collectibles</a>
+    <ul class="dropdown-menu pull-right">
+     <li><a href="#"> Stamps</a> </li> <!-- need to load these from a database if possible-->
+     <li><a href="#"> Coins</a> </li>
+    </ul>
+    </li>
+
+
+    <li class="dropdown-submenu" dir="rtl">
+    <a tabindex="-1" href="#">Electronics</a>
+    <ul class="dropdown-menu pull-right">
+     <li><a href="#"> Cameras</a> </li> <!-- need to load these from a database if possible-->
+     <li><a href="#"> TVs</a> </li>
+     <li><a href="#"> Tablets</a> </li>
+    </ul>
+  </li>
+
+  <li class="dropdown-submenu" dir="rtl">
+    <a tabindex="-1" href="#">Automobiles</a>
+    <ul class="dropdown-menu pull-right">
+     <li><a href="#"> Cars</a> </li> <!-- need to load these from a database if possible-->
+     <li><a href="#"> Trucks</a> </li>
+    </ul>
+  </li>
+
+  <li> <a href="#"> Others </a></li>
+    </ul>
+                
+                    </td>
+                    </tr>
+                
+                </table>
+                
+                </asp:Panel>
+
+
+
+<div id="footerContent">
+<hr />
+    <div class="style1">
+Copyright © 2012-2013 MRG Inc. Copyright © 2012-2013 MRG Lebanon Inc. All Rights Reserved.
+        <br />
+        <a>Privacy Policy</a> | <a>and Conditions</a> 
+    </div>
+</div>
+
+    </form>
+</body>
+</html>

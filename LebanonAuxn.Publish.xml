@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="http://localhost/lebAuxn" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="localhost/lebauxn" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="True" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="bootstrap/bootstrap.min.js" publishTime="12/07/2012 12:22:36" />
+    <file relUrl="img3.png" publishTime="12/07/2012 12:22:36" />
+    <file relUrl="HEADER MAIN IMAGE.png" publishTime="12/07/2012 12:22:36" />
+    <file relUrl="My Profile_2.aspx" publishTime="12/25/2012 13:38:38" />
+    <file relUrl="bin/LebanonAuxn.pdb" publishTime="12/29/2012 18:04:06" />
+    <file relUrl="Scripts/jquery-1.4.1-vsdoc.js" publishTime="12/07/2012 12:22:36" />
+    <file relUrl="My Profile_3.aspx" publishTime="12/29/2012 17:59:34" />
+    <file relUrl="bootstrap/glyphicons-halflings.png" publishTime="12/07/2012 12:22:36" />
+    <file relUrl="About.aspx" publishTime="12/24/2012 20:01:22" />
+    <file relUrl="borderedImage.ascx" publishTime="12/07/2012 12:22:36" />
+    <file relUrl="Collectibles.aspx" publishTime="12/25/2012 01:23:26" />
+    <file relUrl="Scripts/jquery-1.4.1.min.js" publishTime="12/07/2012 12:22:36" />
+    <file relUrl="Img1.png" publishTime="12/07/2012 12:22:36" />
+    <file relUrl="View Items.aspx" publishTime="12/29/2012 17:34:12" />
+    <file relUrl="bootstrap/glyphicons-halflings-white.png" publishTime="12/07/2012 12:22:36" />
+    <file relUrl="Scripts/jquery-1.4.1.js" publishTime="12/07/2012 12:22:36" />
+    <file relUrl="LebanonAuxn.png" publishTime="12/07/2012 12:22:36" />
+    <file relUrl="My Profile_5.aspx" publishTime="12/25/2012 13:39:16" />
+    <file relUrl="bootstrap/bootstrap-responsive.css" publishTime="12/07/2012 12:22:36" />
+    <file relUrl="bootstrap/bootstrap-responsive.min.css" publishTime="12/07/2012 12:22:36" />
+    <file relUrl="bootstrap/bootstrap.js" publishTime="12/07/2012 12:22:36" />
+    <file relUrl="Default.aspx" publishTime="12/07/2012 12:22:36" />
+    <file relUrl="ipad.jpg" publishTime="12/24/2012 20:32:00" />
+    <file relUrl="Home.aspx" publishTime="12/25/2012 13:59:10" />
+    <file relUrl="Sell.aspx" publishTime="12/21/2012 16:24:20" />
+    <file relUrl="img2.png" publishTime="12/07/2012 12:22:36" />
+    <file relUrl="Web.config" publishTime="12/29/2012 18:04:53" />
+    <file relUrl="bootstrap/bootstrap.css" publishTime="12/29/2012 17:24:36" />
+    <file relUrl="Auxn.Master" publishTime="12/29/2012 17:33:07" />
+    <file relUrl="View_Category Selected.aspx" publishTime="12/25/2012 14:15:54" />
+    <file relUrl="My Profile_4.aspx" publishTime="12/25/2012 13:39:00" />
+    <file relUrl="Search.aspx" publishTime="12/25/2012 00:09:40" />
+    <file relUrl="bootstrap/bootstrap.min.css" publishTime="12/21/2012 09:46:16" />
+    <file relUrl="My Profile_1.aspx" publishTime="12/26/2012 20:58:06" />
+    <file relUrl="bin/LebanonAuxn.dll" publishTime="12/29/2012 18:04:07" />
+  </publishProfile>
+</publishData>
